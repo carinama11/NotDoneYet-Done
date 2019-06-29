@@ -1,0 +1,43 @@
+.main-body-container {
+    width: 80vw;
+    min-width: 960px;
+    margin: 7rem auto;
+    background: white;
+    box-shadow: 0rem 1.5rem 4rem black;
+
+    .logo {
+        width: 14rem;
+        height: 4.2rem;
+        background-size: contain;
+        margin-left: 2rem;
+    }
+
+    .search {
+        display: flex;
+    }
+}
+
+header {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.content-container {
+    display: flex;
+
+    .sidebar {
+        flex: 0 0 18%;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+}
+
+.user-nav {
+    display: flex;
+}
