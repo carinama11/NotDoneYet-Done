@@ -1,0 +1,382 @@
+.sidebar {
+    background: rgb(37, 37, 37);
+
+    .list-container {
+        list-style-type: none;
+
+        li {
+            box-sizing: border-box;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            width: 100%;
+            height: 4rem;
+            padding-left: 2rem;
+            text-transform: uppercase;
+            color: white;
+            font-size: 1.3rem;
+
+            &:first-child {
+                margin-top: 12%;
+            }
+
+            .navbar-icon {
+                width: 2rem;
+                height: 2rem;
+                fill: white;
+            }
+
+            span {
+                margin-left: 2rem;
+            }
+
+
+            &:hover {
+                background: rgb(235, 134, 39);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.main-content {
+    overflow: hidden;
+
+    .main-content-image {
+        display: flex;
+        flex: 0 0 1;
+        height: 18rem;
+        position: relative;
+
+        #Next-btn,
+        #Prev-btn {
+            z-index: 20;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            fill: white;
+            opacity: .4;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        #Next-btn {
+            right: 1%;
+
+            .Next-btn-icon {
+                width: 6rem;
+                height: 6rem;
+                cursor: pointer;
+            }
+        }
+
+        #Prev-btn {
+            left: 1%;
+
+            .Prev-btn-icon {
+                width: 6rem;
+                height: 6rem;
+                cursor: pointer;
+            }
+        }
+
+        .image-slider {
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+        }
+
+        .image-content {
+            display: flex;
+            list-style-type: none;
+
+            &__1 {
+                background: url(../img/house-4.jpeg) no-repeat;
+            }
+
+            &__2 {
+                background: url(../img/house-2.jpeg) no-repeat;
+            }
+
+            &__3 {
+                background: url(../img/house-3.jpeg) no-repeat;
+            }
+
+            &__4 {
+                background: url(../img/house-1.jpeg) no-repeat;
+            }
+
+            &__5 {
+                background: url(../img/house-5.jpeg) no-repeat;
+            }
+
+            &__6 {
+                background: url(../img/house-6.jpeg) no-repeat;
+            }
+
+            &__7 {
+                background: url(../img/gal-2.jpeg) no-repeat;
+            }
+
+            li {
+                width: 332px;
+                border: 1px solid grey;
+                background-size: cover;
+            }
+        }
+    }
+
+    .main-content-header {
+        display: flex;
+        align-items: center;
+        flex: 0 0 1;
+        height: 7rem;
+
+        .article-title-container {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .article-title {
+                font-size: 2rem;
+                color: grey;
+            }
+
+            .article-star {
+                width: 2rem;
+                height: 2rem;
+                fill: rgb(235, 134, 39);
+
+            }
+        }
+
+        .article-location-container {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            align-items: center;
+
+            .location-container {
+                display: flex;
+                align-items: center;
+                text-decoration: underline;
+                color: rgb(235, 134, 39);
+                fill: rgb(235, 134, 39);
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .location {
+                margin-right: 3rem;
+
+                .location-icon {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+
+            .ratings {
+                color: white;
+                padding: 1rem;
+                width: 10rem;
+                text-align: center;
+                font-size: 1.6rem;
+                background: rgb(235, 134, 39);
+
+                span {
+                    margin-top: -1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    .main-content-content {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: flex;
+        flex: 0 0 1;
+        justify-content: space-evenly;
+
+        .main-content-wrapper {
+            flex: 0 0 58%;
+        }
+
+        .main-article {
+            padding-right: 2rem;
+            border-right: 1px solid rgba(255, 192, 203, 0.521);
+            box-shadow: 0 2rem 1rem -1rem rgba(0, 0, 0, 0.11);
+
+            .feature-container {
+                display: flex;
+                margin-bottom: 3rem;
+
+                .feature-list {
+                    flex: 1;
+                }
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+
+                &>* {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .feature-icon {
+                width: 1rem;
+                height: 1rem;
+                fill: black;
+            }
+
+
+            .friends-recommendation {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding-bottom: 3rem;
+
+                .friends-picture {
+                    ul {
+                        display: flex;
+
+                        li {
+                            &:not(:first-child) {
+                                margin-left: -4rem;
+                            }
+                        }
+                    }
+
+                    .image {
+                        border-radius: 50%;
+                        width: 5rem;
+                        height: 5rem;
+                        border: 1px solid white;
+
+                        &__1 {
+                            background: url(../img/realtor-1.jpeg);
+                            background-size: cover;
+                        }
+
+                        &__2 {
+                            background: url(../img/realtor-2.jpeg);
+                            background-size: cover;
+                        }
+
+                        &__3 {
+                            background: url(../img/realtor-3.jpeg);
+                            background-size: cover;
+                        }
+
+                        &__4 {
+                            background: url(../img/realtor-1.jpeg);
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .main-article-sidebar {
+            flex: 0 0 30%;
+
+            .article-sidebar-comment {
+                font-size: 1.1rem;
+
+                &:not(:first-child) {
+                    margin-top: 4rem;
+                }
+
+                &>* {
+                    margin: 1rem;
+                }
+
+                box-shadow: 0 2rem 1rem -1rem rgba(0, 0, 0, 0.11);
+            }
+
+            .more-content-review {
+                margin-top: 2rem;
+                text-align: center;
+                font-size: 2rem;
+
+                a {
+                    font-weight: 700;
+                    color: rgb(235, 134, 39);
+                    text-decoration: none;
+                    margin-bottom: 5rem;
+                    border-bottom: 2px solid rgb(235, 134, 39);
+                }
+            }
+        }
+
+        .article-sidebar-user {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+
+            .user-content-info {
+                margin-left: 1rem;
+            }
+
+            .user-rating {
+                margin-left: auto;
+                margin-right: 1rem;
+                color: rgb(235, 134, 39);
+            }
+
+            img {
+                width: 4.8rem;
+                height: 4.8rem;
+                border-radius: 50%;
+                background: url(../img/realtor-2.jpeg) no-repeat;
+                background-size: cover;
+            }
+
+        }
+
+    }
+
+    .content-footer {
+        height: 20rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .header-1 {
+            font-weight: 400;
+            color: grey;
+        }
+
+        .btn-footer {
+            color: white;
+            font-size: 1.3rem;
+            margin-top: 3rem;
+            padding: 1.6rem 8rem;
+            background: linear-gradient(to right, rgba(252, 157, 34, 0.856), rgba(179, 102, 2, 0.932));
+            border-radius: 10rem;
+            transition: all .2s;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(238, 237, 237);
+                transform: translateY(-2%);
+            }
+        }
+    }
+}
